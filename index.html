@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">GYM STORE</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>SELAMAT DATANG DI GYM STORE</h1>
+            <p>
+                Toko perlengkapan gym dan fitness.
+                Temukan berbagai alat olahraga berkualitas
+                dengan harga terjangkau.
+            </p>
+            <a href="#produk" class="btn">Lihat Produk</a>
+        </div>
+
+        <div class="home-img">
+            <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700"
+                 alt="Tempat Gym">
+        </div>
+    </section>
+
+    <!-- PRODUK -->
+    <section class="produk" id="produk">
+        <h2>PRODUK KAMI</h2>
+        <p class="subjudul">Berbagai perlengkapan gym untuk kebutuhanmu</p>
+
+        <div class="produk-container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=500" alt="Dumbbell">
+                <h3>Dumbbell</h3>
+                <p>Alat latihan otot tangan</p>
+                <h4>Rp150.000</h4>
+                <button onclick="beli('Dumbbell')">Beli Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=500" alt="Alat Fitness">
+                <h3>Alat Fitness</h3>
+                <p>Perlengkapan latihan fitness</p>
+                <h4>Rp350.000</h4>
+                <button onclick="beli('Alat Fitness')">Beli Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598289431512-b97b0917affc?w=500" alt="Matras">
+                <h3>Matras Gym</h3>
+                <p>Matras untuk olahraga</p>
+                <h4>Rp100.000</h4>
+                <button onclick="beli('Matras Gym')">Beli Sekarang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586401100295-7a8096fd231a?w=500" alt="Barbel">
+                <h3>Barbell</h3>
+                <p>Alat latihan angkat beban</p>
+                <h4>Rp450.000</h4>
+                <button onclick="beli('Barbell')">Beli Sekarang</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TENTANG -->
+    <section class="tentang" id="tentang">
+        <h2>TENTANG KAMI</h2>
+        <p>
+            Gym Store adalah toko yang menyediakan berbagai
+            macam perlengkapan olahraga dan fitness.
+            Kami menyediakan produk berkualitas dengan
+            harga yang terjangkau untuk membantu memenuhi
+            kebutuhan olahraga Anda.
+        </p>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="kontak" id="kontak">
+        <h2>HUBUNGI KAMI</h2>
+        <p>Ingin bertanya tentang produk kami?</p>
+        <p>Email: gymstore@gmail.com</p>
+        <p>WhatsApp: 0812-3456-7890</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 GYM STORE. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function beli(produk) {
+            alert("Anda memilih produk " + produk);
+        }
+    </script>
+
+</body>
+</html>
